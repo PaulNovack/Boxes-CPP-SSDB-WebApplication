@@ -50,6 +50,8 @@ b:0000aabb:0000bxdg | Box Attribures
 Example Item key value 
 * Question requires a global sequence generator Should User ID preceed Box id in key?
 * if using global uniques can grab 100 at a time from the user / shard SSDB instances with redis incr("itemSeq") and then immediate validation that no other client has grabbed the same list of numbers.
+OR
+* Just use twitter snowflake
 
 key | Value
 --------|---------
