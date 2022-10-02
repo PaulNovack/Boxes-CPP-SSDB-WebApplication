@@ -48,7 +48,7 @@ key | Value
 b:0000aabb:0000bxdg | Box Attribures
 
 Example Item key value 
-* Question requires a global sequence generator Should User ID preceed Box id?
+* Question requires a global sequence generator Should User ID preceed Box id in key?
 
 key | Value
 --------|---------
