@@ -6,4 +6,4 @@ Another experiment creating a highly scaleable JSON API Web Application with C++
 
 * Utilizing C++ Web servers, sticky sessions and in memory session state persistance.  
 * User data sharded on SSDB instances as a data store for persistence.  
-* React framework from UI.
+* React framework for UI.
