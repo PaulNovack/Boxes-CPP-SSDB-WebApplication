@@ -51,7 +51,7 @@ Example Item key value
 
 key | Value
 --------|---------
-i:0000aabb:0000bxdg | Item Attribures
+i:0000bxdg:0000bhjg | Item Attribures
 
 Redis / SSDB Commands
 
