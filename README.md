@@ -8,6 +8,13 @@ Another experiment creating a highly scaleable JSON API Web Application (Boxes) 
 * User data sharded on SSDB instances as a data store for persistence.  
 * React framework for UI.
 
+# To do:
+* use https://github.com/PaulNovack/boxesCPlus as a starting point for web server and API routes already done.
+* Create a thread safe redis connection pool with redis which includes health checks to all the shards.
+* Create an actual JSON parser implementation instead of the janky one in BoxesCPlus that was thrown in
+* Change the way data is stored from mySQL database to a Redis/SSDB backend
+* Create Box, User and Item Classes that can function like an ORM to serialize their data to Key Value pairs for storage and serialize to JSON for frontend react.
+
 Numeric ids are base65 encoded (A custom encoding) to strings 4 or 8 chars long.	SSDB only works with strings so numbers are represented in a sortable string rather than left padding a number to allow it to be sortable.  This way 8 characters can represent a number up to 3.186448129×10¹⁴
 
 * Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"
