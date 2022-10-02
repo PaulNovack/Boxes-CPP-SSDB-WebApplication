@@ -33,7 +33,7 @@ Example user key value
 
 key | Value
 --------|---------
-us:johndoe@gmail.com:password | 0000aabb
+u:johndoe@gmail.com:password | 0000aabb
 
 Example user_shard key value (Users data would be stored on shard 1
 
