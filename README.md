@@ -10,7 +10,7 @@ Another experiment creating a highly scaleable JSON API Web Application (Boxes) 
 
 # To do:
 * use https://github.com/PaulNovack/boxesCPlus as a starting point for web server and API routes already done.
-* Create a thread safe redis connection pool with redis which includes health checks to all the shards.
+* Create a thread safe redis connection pool with redis which includes health checks to all the shards using redis-plus-plus.
 * Create an actual JSON parser implementation instead of the janky one in BoxesCPlus that was thrown in
 * Change the way data is stored in BoxesCPlus from mySQL database to a Redis/SSDB backend
 * Create Box, User and Item Classes that can function like an ORM to serialize their data to Key Value pairs for storage and serialize to JSON for frontend react.
