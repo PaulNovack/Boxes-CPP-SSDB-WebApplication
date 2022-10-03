@@ -42,6 +42,8 @@ u:johndoe@gmail.com:password | 0000aabb
 
 Example user_shard key value (Users data would be stored on shard 1
 
+For redistribution of data to different shards value should also have Logged in (bool) and storage state (bool) fixed or moving.  A login would cancel a move from one shard to another and just move to another user to redistribute data among shards.
+
 key | Value
 --------|---------
 us:0000aabb | 00000001
