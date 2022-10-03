@@ -23,6 +23,8 @@ Boxes and Items are strings 4 long  (65 X 65 X 65 X 65) up to 17850625 boxes and
 
 * Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"
 
+The ":" character does not have to be stored in key actually beause we have set lengths for each key ( 8 or 4)
+
 pseudo table |		key	|	value
 -------------|--------|--------------------------------------------------------
 user		| u:username:password		| userid
