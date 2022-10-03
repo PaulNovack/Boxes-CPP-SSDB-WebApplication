@@ -18,8 +18,8 @@ Another experiment creating a highly scaleable JSON API Web Application (Boxes) 
 
 Numeric ids are base65 encoded (A custom encoding) to strings 4 or 8 chars long.	SSDB only works with strings so numbers are represented in a sortable string rather than left padding a number to allow it to be sortable.  This way 8 characters can represent a number up to 3.186448129×10¹⁴
 
-* Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"
-
+~~* Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"~~
+* Sequence of characters for encoding "+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}"
 
 pseudo table |		key	|	value
 -------------|--------|--------------------------------------------------------
@@ -45,19 +45,14 @@ Example Box key value
 
 key | Value
 --------|---------
-b:0000aabb:0000bxdg | Box Attribures
+b:0000aabb:bxdg | Box Attribures
 
 Example Item key value 
-* Question requires a global sequence generator Should User ID preceed Box id in key?
-* if using global uniques can grab 100 at a time from the user / shard SSDB instances with redis incr("itemSeq") and then immediate validation that no other client has grabbed the same list of numbers.
 
-OR
-
-* Just use twitter snowflake
 
 key | Value
 --------|---------
-i:0000bxdg:0000bhjg | Item Attribures
+i:0000aabb:bhjg:adfg | Item Attribures
 
 Redis / SSDB Commands
 
