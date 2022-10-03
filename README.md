@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/PaulNovack/Boxes-CPP-SSDB-WebApplication/blob/main/BoxesCPPSSDB-Network.jpeg?raw=true)
 
-Another experiment creating a highly scaleable JSON API Web Application (Boxes) with C++, SSDB and React.
+Another experiment creating a highly scaleable JSON API Web Application (Boxes) with C++, SSDB (https://ssdb.io/) and React.
 
 * Utilizing C++ Web servers, sticky sessions and in memory session state persistance. Sticky sessions allows Web Application servers to maintain state in memory rather than in memcache, database or redis etc. 
 * User data sharded on SSDB instances as a data store for persistence.  
@@ -11,7 +11,9 @@ Another experiment creating a highly scaleable JSON API Web Application (Boxes) 
 # To do:
 * use https://github.com/PaulNovack/boxesCPlus as a starting point for web server and API routes already done.
 * Create a thread safe redis connection pool with redis which includes health checks to all the shards using redis-plus-plus.
-* Create an actual JSON parser implementation instead of the janky one in BoxesCPlus that was thrown in
+https://github.com/sewenew/redis-plus-plus
+* Create an actual JSON parser implementation instead of the janky one in BoxesCPlus that was thrown in.  RapidJSON should work OK. https://github.com/Tencent/rapidjson
+
 * Change the way data is stored in BoxesCPlus from mySQL database to a Redis/SSDB backend
 * Create Box, User and Item Classes that can function like an ORM to serialize their data to Key Value pairs for storage and serialize to JSON for frontend react.
 * Change Session state stored in application to use STL map of Box and Item classes from the simple string representation used in BoxesCPlus implementation.
