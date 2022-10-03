@@ -15,6 +15,7 @@ Another experiment creating a highly scaleable JSON API Web Application (Boxes) 
 * Change the way data is stored in BoxesCPlus from mySQL database to a Redis/SSDB backend
 * Create Box, User and Item Classes that can function like an ORM to serialize their data to Key Value pairs for storage and serialize to JSON for frontend react.
 * Change Session state stored in application to use STL map of Box and Item classes from the simple string representation used in BoxesCPlus implementation.
+* Do all writes to SSDB async after updating Web Application Session and returning response.
 
 Numeric ids are base65 encoded (A custom encoding) to strings 4 or 8 chars long.	SSDB only works with strings so numbers are represented in a sortable string rather than left padding a number to allow it to be sortable.  This way 8 characters can represent a number up to 3.186448129×10¹⁴
 
