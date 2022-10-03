@@ -18,6 +18,9 @@ Another experiment creating a highly scaleable JSON API Web Application (Boxes) 
 
 Numeric ids are base65 encoded (A custom encoding) to strings 4 or 8 chars long.	SSDB only works with strings so numbers are represented in a sortable string rather than left padding a number to allow it to be sortable.  This way 8 characters can represent a number up to 3.186448129×10¹⁴
 
+Users are strings 8 long up to 3.186448129×10¹⁴ users.
+Boxes and Items are strings 4 long  (65 X 65 X 65 X 65) up to 17850625 boxes and items per box.
+
 ~~* Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"~~
 * Sequence of characters for encoding "+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}"
 
@@ -48,11 +51,11 @@ key | Value
 b:0000aabb:bxdg | Box Attribures
 
 Example Item key value 
-
+* Items could use simply the box key but then here would have to be a distributed sequence generator like twitter snowflake or part of key would have to be the shard identifier.
 
 key | Value
 --------|---------
-i:0000aabb:bhjg:adfg | Item Attribures
+i:0000aabb:bxdg:adfg | Item Attribures
 
 Redis / SSDB Commands
 
