@@ -21,8 +21,7 @@ Numeric ids are base65 encoded (A custom encoding) to strings 4 or 8 chars long.
 Users are strings 8 long up to 3.186448129×10¹⁴ users.
 Boxes and Items are strings 4 long  (65 X 65 X 65 X 65) up to 17850625 boxes and items per box.
 
-~~* Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"~~
-* Sequence of characters for encoding "+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}"
+* Sequence of characters for encoding "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz{|}~"
 
 pseudo table |		key	|	value
 -------------|--------|--------------------------------------------------------
