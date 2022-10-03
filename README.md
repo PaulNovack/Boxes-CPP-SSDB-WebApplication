@@ -4,7 +4,7 @@
 
 Another experiment creating a highly scaleable JSON API Web Application (Boxes) with C++, SSDB and React.
 
-* Utilizing C++ Web servers, sticky sessions and in memory session state persistance.  
+* Utilizing C++ Web servers, sticky sessions and in memory session state persistance. Sticky sessions allows Web Application servers to maintain state in memory rather than in memcache, database or redis etc. 
 * User data sharded on SSDB instances as a data store for persistence.  
 * React framework for UI.
 
